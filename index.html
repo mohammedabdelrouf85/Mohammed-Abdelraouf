@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Abdelraouf</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%230d1117'/%3E%3Crect x='4' y='4' width='92' height='92' rx='24' fill='none' stroke='%2358a6ff' stroke-width='6' stroke-opacity='0.85'/%3E%3Cpath d='M30 35 L18 50 L30 65 M70 35 L82 50 L70 65 M54 32 L44 68' stroke='%2358a6ff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <link rel="alternate icon" href="favicon.svg">
+    
+    <!-- Meta SEO Tags -->
+    <meta name="description" content="Personal Portfolio of Mohammed Abdelraouf - MIS Student at MTI University, Aspiring Back-End PHP Developer, Live Chat Specialist (Teleperformance - Talabat), and Tech Enthusiast based in Egypt.">
+    <meta name="keywords" content="Mohammed Abdelraouf, MIS, Back-End Developer, PHP Developer, Teleperformance, Talabat, IT Hardware, Cybersecurity, Egypt Web Developer">
+    <meta name="author" content="Mohammed Abdelraouf">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Professional Tech Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="logo-bracket">&lt;&nbsp;</span><span class="logo-name">Mohammed.Dev</span><span class="logo-bracket">&nbsp;/&gt;</span>
+            </div>
+            <div class="preloader-spinner-box">
+                <div class="preloader-ring"></div>
+                <div class="preloader-ring inner"></div>
+            </div>
+            <div class="preloader-bar-wrapper">
+                <div class="preloader-bar" id="preloaderBar"></div>
+            </div>
+            <div class="preloader-status">
+                <span id="preloaderText" class="preloader-text">Booting developer profile environment...</span>
+                <span id="preloaderPercent" class="preloader-percent">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mouse Cursor Spotlight Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo" id="navLogo">
+                <span class="logo-bracket">&lt;&nbsp;</span><span class="logo-name">Mohammed.Dev</span><span class="logo-bracket">&nbsp;/&gt;</span>
+            </a>
+
+            <div class="status-badge header-status">
+                <span class="status-dot"></span>
+                <span>Open for Opportunities</span>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user text-accent-blue"></i> About</a>
+                <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase text-accent-purple"></i> Experience</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-code text-accent-blue"></i> Tech Stack</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-cubes text-accent-purple"></i> Projects</a>
+                <a href="#terminal-section" class="nav-link"><i class="fa-solid fa-terminal text-accent-blue"></i> CLI</a>
+                <a href="#contact" class="nav-link btn-nav-cta">Get in Touch</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-grid"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="pulse-icon">⚡</span>
+                        <span>MIS Student @ MTI University & Back-End Developer</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text glow-text">Mohammed Abdelraouf</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Bridging <span class="text-highlight-blue">Business Intelligence (MIS)</span> & <span class="text-highlight-purple">Back-End Web Development</span>
+                    </p>
+
+                    <p class="hero-description">
+                        Passionate tech specialist based in Egypt 🇪🇬. Combining structured systems analysis, high-volume live customer chat operations (Teleperformance - Talabat Account), IT hardware expertise, and PHP/MySQL back-end engineering.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#experience" class="btn btn-primary">
+                            <span>Explore Work & Experience</span>
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                        <button class="btn btn-ghost copy-btn" data-copy="mohammedabdelrouf85@gmail.com" title="Quick Copy Email">
+                            <i class="fa-regular fa-copy"></i>
+                            <span>Copy Email</span>
+                        </button>
+                    </div>
+
+                    <!-- Tech Stack Pills -->
+                    <div class="hero-tech-row">
+                        <span class="tech-row-label">Core Focus:</span>
+                        <div class="tech-row-pills">
+                            <span class="tech-pill"><i class="fa-solid fa-headset text-accent-purple"></i> Live Chat & CSAT</span>
+                            <span class="tech-pill"><i class="fa-solid fa-shield-halved text-accent-blue"></i> Cybersecurity</span>
+                            <span class="tech-pill"><i class="fa-solid fa-diagram-project text-accent-purple"></i> MIS Systems Analysis</span>
+                            <span class="tech-pill"><i class="fa-brands fa-python text-accent-blue"></i> Python</span>
+                            <span class="tech-pill"><i class="fa-brands fa-js text-accent-purple"></i> JavaScript</span>
+                            <span class="tech-pill"><i class="fa-brands fa-php text-accent-blue"></i> PHP</span>
+                            <span class="tech-pill"><i class="fa-solid fa-database text-accent-purple"></i> MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Floating Window -->
+                <div class="hero-visual">
+                    <div class="code-window glass-card">
+                        <div class="code-header">
+                            <div class="window-controls">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title"><i class="fa-solid fa-file-code"></i> profile.php</span>
+                            <span class="window-badge">PHP 8.2</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="keyword">&lt;?php</span>
+
+<span class="keyword">class</span> <span class="class-name">DeveloperProfile</span> {
+    <span class="keyword">public string</span> <span class="variable">$name</span> = <span class="string">"Mohammed Abdelraouf"</span>;
+    <span class="keyword">public string</span> <span class="variable">$location</span> = <span class="string">"Egypt 🇪🇬"</span>;
+    <span class="keyword">public string</span> <span class="variable">$education</span> = <span class="string">"Business Admin (MIS) @ MTI"</span>;
+    
+    <span class="keyword">public array</span> <span class="variable">$activeRoles</span> = [
+        <span class="string">"Live Chat Support Specialist @ Teleperformance"</span>,
+        <span class="string">"Aspiring Back-End PHP Developer"</span>,
+        <span class="string">"Cybersecurity Learner"</span>
+    ];
+
+    <span class="keyword">public function</span> <span class="function-name">getMission</span>(): <span class="keyword">string</span> {
+        <span class="keyword">return</span> <span class="string">"Optimizing user experience & backend systems."</span>;
+    }
+}
+
+<span class="variable">$dev</span> = <span class="keyword">new</span> <span class="class-name">DeveloperProfile</span>();
+<span class="keyword">echo</span> <span class="variable">$dev</span>-><span class="function-name">getMission</span>();
+</code></pre>
+                        </div>
+                        <div class="code-footer">
+                            <span class="status-ok"><i class="fa-solid fa-check-circle"></i> Compiled successfully</span>
+                            <span class="execution-time">⏱️ 12ms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT & KEY STATS BAR -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid glass-card reveal-on-scroll">
+                    <div class="stat-item">
+                        <div class="stat-icon blue-glow"><i class="fa-solid fa-code-commit"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="5">0<span>+</span></h3>
+                            <p class="stat-label">Projects & Apps Built</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon purple-glow"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="2">0<span>+</span></h3>
+                            <p class="stat-label">Years Learning & Work</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon blue-glow"><i class="fa-solid fa-headset"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="98">0<span>%</span></h3>
+                            <p class="stat-label">CSAT Satisfaction Score</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-icon purple-glow"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="stat-info">
+                            <h3 class="stat-number" data-target="500">0<span>+</span></h3>
+                            <p class="stat-label">Tech & Spec Consultations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">BACKGROUND & OBJECTIVES</span>
+                    <h2 class="section-title">About <span class="gradient-text">Mohammed</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-bio glass-card">
+                        <div class="bio-icon">
+                            <i class="fa-solid fa-laptop-code text-accent-blue"></i>
+                        </div>
+                        <h3>Business Intelligence Meets Technical Execution</h3>
+                        <p>
+                            I am a Management Information Systems (MIS) student at MTI University in Egypt, fascinated by the intersection of <strong>business workflow analysis</strong> and <strong>back-end software engineering</strong>.
+                        </p>
+                        <p>
+                            Through my daily work at <strong>Teleperformance (Talabat Account)</strong>, I interact with hundreds of users in real time under strict SLAs. This high-volume environment sharpens my problem-solving ability, critical empathy, and deep understanding of consumer tech workflows.
+                        </p>
+                        <p>
+                            Simultaneously, my background in IT hardware consultation at Mall Elbostan gives me a solid foundation in modern computing architecture—from budget optimization to custom gaming & workstation specs.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights-grid">
+                        <div class="highlight-card glass-card">
+                            <div class="h-icon"><i class="fa-solid fa-graduation-cap text-accent-purple"></i></div>
+                            <h4>MIS @ MTI University</h4>
+                            <p>Systems analysis, business processes, database design & data structuring.</p>
+                        </div>
+
+                        <div class="highlight-card glass-card">
+                            <div class="h-icon"><i class="fa-solid fa-headset text-accent-blue"></i></div>
+                            <h4>Live Chat & Support Operations</h4>
+                            <p>Proven track record of driving top CSAT (Customer Satisfaction) and FCR (First Contact Resolution).</p>
+                        </div>
+
+                        <div class="highlight-card glass-card">
+                            <div class="h-icon"><i class="fa-solid fa-microchip text-accent-purple"></i></div>
+                            <h4>Hardware & Systems Specs</h4>
+                            <p>Consultative expert in PC components, laptop spec matching, and hardware troubleshooting.</p>
+                        </div>
+
+                        <div class="highlight-card glass-card">
+                            <div class="h-icon"><i class="fa-solid fa-user-shield text-accent-blue"></i></div>
+                            <h4>Cybersecurity & Back-End</h4>
+                            <p>Hands-on practice with PHP, MySQL queries, secure coding principles, and Linux environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK EXPERIENCE SECTION -->
+        <section class="experience-section section-padding" id="experience">
+            <div class="container">
+                <div class="section-header text-center">
+                    <section-subtitle class="section-subtitle">CAREER JOURNEY</section-subtitle>
+                    <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot glow-dot-blue">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <span class="company-badge"><i class="fa-solid fa-building"></i> Teleperformance</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Feb 2026 – Present</span>
+                            </div>
+                            <h3 class="role-title">Live Chat Agent & Customer Support Specialist</h3>
+                            <span class="account-tag"><i class="fa-solid fa-utensils"></i> Talabat Account</span>
+                            <p class="role-description">
+                                Handling real-time, high-pressure live chat communications for one of the Middle East's premier food & quick-commerce platforms. 
+                            </p>
+                            <ul class="role-bullets">
+                                <li><i class="fa-solid fa-check text-accent-blue"></i> Consistently exceeding KPIs in <strong>CSAT (Customer Satisfaction Score)</strong> and <strong>FCR (First Contact Resolution)</strong>.</li>
+                                <li><i class="fa-solid fa-check text-accent-blue"></i> Managing multi-task live chat interfaces under fast-paced operational SLAs.</li>
+                                <li><i class="fa-solid fa-check text-accent-blue"></i> Resolving complex refund, delivery, and user account escalations with calm empathy and rapid problem-solving.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Live Chat CRM</span>
+                                <span class="tag">CSAT Optimization</span>
+                                <span class="tag">FCR Mastery</span>
+                                <span class="tag">SLA Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot glow-dot-purple">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <span class="company-badge"><i class="fa-solid fa-store"></i> Mall Elbostan</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jun 2025 – Dec 2025</span>
+                            </div>
+                            <h3 class="role-title">IT Hardware & Laptop Sales Specialist</h3>
+                            <p class="role-description">
+                                Served as a technical sales consultant in Egypt's renowned tech hub, advising customers on PC architecture, laptop specs, and custom workstation builds.
+                            </p>
+                            <ul class="role-bullets">
+                                <li><i class="fa-solid fa-check text-accent-purple"></i> Guided clients on CPU/GPU choices, RAM expansion, NVMe storage, and cooling solutions tailored for video editing, 3D rendering, and competitive gaming.</li>
+                                <li><i class="fa-solid fa-check text-accent-purple"></i> Conducted on-site diagnostics, hardware testing, and budget optimization for university students and professionals.</li>
+                                <li><i class="fa-solid fa-check text-accent-purple"></i> Boosted customer satisfaction by recommending durable, cost-effective hardware builds.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">PC Hardware Specs</span>
+                                <span class="tag">Consultative Sales</span>
+                                <span class="tag">Budget Optimization</span>
+                                <span class="tag">Technical Diagnostics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot glow-dot-blue">
+                            <i class="fa-solid fa-cash-register"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <span class="company-badge"><i class="fa-solid fa-cart-shopping"></i> Kazyon Market</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan 2025 – Mar 2025</span>
+                            </div>
+                            <h3 class="role-title">Cashier & Retail Customer Operations</h3>
+                            <p class="role-description">
+                                Executed daily POS transactions, cash management, and inventory reconciliation in a fast-paced retail supermarket chain.
+                            </p>
+                            <ul class="role-bullets">
+                                <li><i class="fa-solid fa-check text-accent-blue"></i> Maintained high transactional accuracy and drawer balancing during peak rush hours.</li>
+                                <li><i class="fa-solid fa-check text-accent-blue"></i> Strengthened foundational customer relation skills, active listening, and inventory flow control.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">POS Systems</span>
+                                <span class="tag">Cash Handling</span>
+                                <span class="tag">Inventory Flow</span>
+                                <span class="tag">Customer Relations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & TECH MATRIX SECTION -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">CAPABILITIES & TOOLKIT</span>
+                    <h2 class="section-title">Skills & <span class="gradient-text">Tech Matrix</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="tech">Technical & Software</button>
+                    <button class="filter-btn" data-filter="operations">Operations & Soft Skills</button>
+                    <button class="filter-btn" data-filter="mis">MIS & Systems</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Technical Skill 1 -->
+                    <div class="skill-card glass-card" data-category="tech">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper blue-glow">
+                                <i class="fa-brands fa-php"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>PHP Back-End Development</h3>
+                                <span class="skill-level">Intermediate / Learning</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">OOP concepts, RESTful API structures, server-side scripting, form validation, session management.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar blue-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skill 2 -->
+                    <div class="skill-card glass-card" data-category="tech mis">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper purple-glow">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>MySQL & Relational Databases</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Database normalization, SQL queries (SELECT, JOIN, GROUP BY), relational schema design, indexes.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar purple-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- MIS Systems Analysis -->
+                    <div class="skill-card glass-card" data-category="mis">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper blue-glow">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>MIS & Systems Analysis</h3>
+                                <span class="skill-level">Academic & Applied</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">ERD modeling, Data Flow Diagrams (DFD), requirements gathering, business process mapping.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar blue-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Cybersecurity -->
+                    <div class="skill-card glass-card" data-category="tech">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper purple-glow">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>Cybersecurity Fundamentals</h3>
+                                <span class="skill-level">Enthusiast / Learner</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">OWASP Top 10 awareness, SQL Injection prevention, network protocols (HTTP/HTTPS, TCP/IP), Linux commands.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar purple-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Live Chat Operations -->
+                    <div class="skill-card glass-card" data-category="operations">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper blue-glow">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>Live Chat & CSAT Operations</h3>
+                                <span class="skill-level">Expert / Active Role</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">High-speed live chat handling, empathy-driven response writing, dispute de-escalation, CSAT/FCR metrics.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar blue-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Hardware Consultation -->
+                    <div class="skill-card glass-card" data-category="operations tech">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper purple-glow">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>IT Hardware & PC Assembly</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Laptop/Desktop hardware architecture, CPU/GPU benchmarking, thermal management, hardware troubleshooting.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar purple-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Photo & Video Editing -->
+                    <div class="skill-card glass-card" data-category="tech">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper blue-glow">
+                                <i class="fa-solid fa-photo-film"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>Photo & Video Editing</h3>
+                                <span class="skill-level">Practitioner</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Adobe Photoshop, Premiere Pro, Canva graphics creation, video trimming, visual asset design.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar blue-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card glass-card" data-category="operations">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper purple-glow">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="skill-title-box">
+                                <h3>Critical Problem Solving</h3>
+                                <span class="skill-level">Core Competency</span>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Root-cause analysis, fast adaptability under stress, active listening, consultative recommendation.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar purple-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS & LEARNING HUB -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">PRACTICAL PROJECTS & LABS</span>
+                    <h2 class="section-title">Projects & <span class="gradient-text">Learning Hub</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Project Filter Buttons -->
+                <div class="filter-tabs" id="projectFilter">
+                    <button class="p-filter-btn active" data-pfilter="all">All Projects</button>
+                    <button class="p-filter-btn" data-pfilter="apps">Apps & Mobile</button>
+                    <button class="p-filter-btn" data-pfilter="web">Web & Systems</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- PROJECT 1: Gaming Zonee (First Programming Project) -->
+                    <div class="project-card glass-card reveal-on-scroll" data-pcategory="web">
+                        <div class="project-header-bar">
+                            <div class="p-badge blue-badge"><i class="fa-solid fa-gamepad"></i> First Programming Project</div>
+                            <div class="p-links">
+                                <a href="https://mohammedabdelrouf85.github.io/Gaming-Zonee/" target="_blank" class="p-icon-btn" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/mohammedabdelrouf85/Gaming-Zonee" target="_blank" class="p-icon-btn" title="View Source Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-cover-box">
+                            <img src="gaming_zonee_preview.png" alt="Gaming Zonee Preview" class="project-cover-img">
+                        </div>
+                        <h3 class="project-title">Gaming Zonee Portal</h3>
+                        <p class="project-desc">
+                            My first web programming project! An interactive gaming portal built and deployed live on GitHub Pages. Features dynamic gaming content layout, modern UI cards, and responsive web design.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5 & CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Gaming Portal</span>
+                            <span>GitHub Pages</span>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 2: AgriStats (MOST IMPORTANT PROJECT - أهم مشروع) -->
+                    <div class="project-card glass-card featured-project-card reveal-on-scroll" data-pcategory="apps">
+                        <div class="featured-ribbon"><i class="fa-solid fa-star"></i> Most Important Project</div>
+                        <div class="project-header-bar">
+                            <div class="p-badge star-badge"><i class="fa-solid fa-seedling"></i> AgriStats Analysis</div>
+                            <div class="p-links">
+                                <span class="p-icon-btn" title="Core App System"><i class="fa-solid fa-chart-pie"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-media-box">
+                            <img src="agristats_icon.png" alt="AgriStats Icon" class="agristats-thumb-icon">
+                            <div class="media-title-group">
+                                <h3>AgriStats - Agricultural Statistical Analysis App</h3>
+                                <span class="media-sub">Flutter & AI-Powered Data Analytics Platform</span>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            A comprehensive statistical analysis application developed for agricultural data processing. Integrates Google ML Kit text recognition (OCR), Excel/PDF parsers, custom FL Charts, and automated Word report generators.
+                        </p>
+                        <div class="project-tags">
+                            <span>Flutter & Dart</span>
+                            <span>ML Kit Text OCR</span>
+                            <span>FL Charts</span>
+                            <span>Excel/PDF Parsers</span>
+                            <span>Provider State</span>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 3: House Management System (TOP PROJECT - ثاني أهم مشروع) -->
+                    <div class="project-card glass-card featured-project-card reveal-on-scroll" data-pcategory="web">
+                        <div class="featured-ribbon purple-ribbon"><i class="fa-solid fa-crown"></i> Top Project</div>
+                        <div class="project-header-bar">
+                            <div class="p-badge purple-badge"><i class="fa-solid fa-house-user"></i> House Management</div>
+                            <div class="p-links">
+                                <span class="p-icon-btn" title="Property System"><i class="fa-solid fa-building-user"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-cover-box">
+                            <img src="house_management_preview.png" alt="House Management System Preview" class="project-cover-img">
+                        </div>
+                        <h3 class="project-title">House Management System</h3>
+                        <p class="project-desc">
+                            A full-fledged Property & Household Management Web Application built to streamline rental units, tenant contracts, expense tracking, maintenance logs, and real-time financial reporting dashboards.
+                        </p>
+                        <div class="project-tags">
+                            <span>Property Analytics</span>
+                            <span>Financial Reporting</span>
+                            <span>Tenant Portal</span>
+                            <span>Dashboard UI</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE TERMINAL CLI SECTION -->
+        <section class="terminal-section section-padding" id="terminal-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">INTERACTIVE DEVELOPER EXPERIENCE</span>
+                    <h2 class="section-title">Developer <span class="gradient-text">CLI Terminal</span></h2>
+                    <p class="section-intro-text">
+                        Type commands or click quick shortcuts below to interact with Mohammed's profile directly in a simulated terminal environment!
+                    </p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="terminal-wrapper glass-card">
+                    <div class="terminal-topbar">
+                        <div class="terminal-buttons">
+                            <span class="t-btn red"></span>
+                            <span class="t-btn yellow"></span>
+                            <span class="t-btn green"></span>
+                        </div>
+                        <div class="terminal-title"><i class="fa-solid fa-terminal"></i> mohammed@dev-portfolio ~ (bash)</div>
+                        <div class="terminal-status"><span class="pulse-green">●</span> ONLINE</div>
+                    </div>
+
+                    <!-- Terminal Quick Command Shortcuts -->
+                    <div class="terminal-shortcuts">
+                        <span class="shortcut-label">Quick Commands:</span>
+                        <button class="btn-shortcut" data-cmd="help"><code>help</code></button>
+                        <button class="btn-shortcut" data-cmd="about"><code>about</code></button>
+                        <button class="btn-shortcut" data-cmd="skills"><code>skills</code></button>
+                        <button class="btn-shortcut" data-cmd="contact"><code>contact</code></button>
+                        <button class="btn-shortcut" data-cmd="clear"><code>clear</code></button>
+                    </div>
+
+                    <div class="terminal-screen" id="terminalScreen">
+                        <div class="terminal-line welcome-msg">
+                            Welcome to Mohammed Abdelraouf's Interactive Terminal v1.0.0
+                        </div>
+                        <div class="terminal-line welcome-sub">
+                            Type <span class="cmd-text">'help'</span> to see available commands or click the shortcut buttons above.
+                        </div>
+                        <div class="terminal-output" id="terminalOutput"></div>
+
+                        <!-- Active Input Line -->
+                        <div class="terminal-input-row">
+                            <span class="prompt-user">guest@mohammed-dev</span>:<span class="prompt-path">~</span>$&nbsp;
+                            <input type="text" id="terminalInput" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. help, skills, contact)...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">LET'S CONNECT</span>
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards / Information -->
+                    <div class="contact-info">
+                        <div class="contact-card glass-card">
+                            <div class="c-icon blue-glow"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="c-details">
+                                <span class="c-label">Direct Email</span>
+                                <span class="c-value">mohammedabdelrouf85@gmail.com</span>
+                            </div>
+                            <button class="btn-copy-icon copy-btn" data-copy="mohammedabdelrouf85@gmail.com" title="Copy Email">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="c-icon purple-glow"><i class="fa-solid fa-phone"></i></div>
+                            <div class="c-details">
+                                <span class="c-label">Phone & WhatsApp</span>
+                                <span class="c-value">+20 1098539085</span>
+                            </div>
+                            <button class="btn-copy-icon copy-btn" data-copy="+20 1098539085" title="Copy Phone">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="c-icon blue-glow"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="c-details">
+                                <span class="c-label">Location</span>
+                                <span class="c-value">Egypt 🇪🇬 (Available for Remote & On-Site)</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links-card glass-card">
+                            <h4>Connect via Channels</h4>
+                            <div class="social-buttons">
+                                <a href="mailto:mohammedabdelrouf85@gmail.com" class="social-btn" title="Send Email"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://wa.me/201098539085" target="_blank" class="social-btn" title="WhatsApp Message"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://linkedin.com" target="_blank" class="social-btn" title="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com" target="_blank" class="social-btn" title="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Form -->
+                    <div class="contact-form-wrapper glass-card">
+                        <h3>Send a Direct Message</h3>
+                        <p class="form-subtext">Have a project, job opportunity, or tech question? Drop a message below!</p>
+                        
+                        <form id="contactForm" class="contact-form" action="https://formsubmit.co/mohammedabdelrouf85@gmail.com" method="POST">
+                            <!-- FormSubmit Config -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                            <input type="hidden" name="_autorespond" value="Thank you for reaching out! Mohammed Abdelraouf has received your message and will respond as soon as possible.">
+
+                            <div class="form-group">
+                                <label for="senderName"><i class="fa-solid fa-user"></i> Your Name</label>
+                                <input type="text" id="senderName" name="name" required placeholder="e.g. John Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senderEmail"><i class="fa-solid fa-envelope"></i> Your Email</label>
+                                <input type="email" id="senderEmail" name="email" required placeholder="e.g. john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="messageSubject"><i class="fa-solid fa-tag"></i> Subject</label>
+                                <input type="text" id="messageSubject" name="subject" required placeholder="Job Opportunity / Project Collaboration">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="messageBody"><i class="fa-solid fa-message"></i> Message</label>
+                                <textarea id="messageBody" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <div class="form-actions-grid">
+                                <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                    <span>Send Message</span>
+                                </button>
+                                
+                                <button type="button" id="whatsappBtn" class="btn btn-secondary btn-block">
+                                    <i class="fa-brands fa-whatsapp text-accent-green"></i>
+                                    <span>Send via WhatsApp</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;&nbsp;</span>Mohammed.Dev<span class="logo-bracket">&nbsp;/&gt;</span>
+                </a>
+                <p>© 2026 Mohammed Abdelraouf. All rights reserved.</p>
+            </div>
+            
+            <div class="footer-right">
+                <a href="#hero" class="btn-back-top" title="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <span>Back to Top</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
