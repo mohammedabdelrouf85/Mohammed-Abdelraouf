@@ -1092,10 +1092,47 @@ body.no-scroll {
     color: #000;
     box-shadow: 0 4px 12px var(--accent-purple-glow);
 }
+.blue-ribbon {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, #79c0ff 100%);
+    color: #000;
+    box-shadow: 0 4px 12px var(--accent-blue-glow);
+}
 .star-badge {
     background: rgba(255, 215, 0, 0.15) !important;
     color: #ffd700 !important;
     border: 1px solid rgba(255, 215, 0, 0.4) !important;
+}
+
+/* Gallery Controls */
+.project-gallery-box {
+    position: relative;
+}
+.gallery-controls {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+    background: rgba(13, 17, 23, 0.75);
+    padding: 4px 8px;
+    border-radius: 12px;
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(8px);
+}
+.gallery-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+.gallery-dot.active, .gallery-dot:hover {
+    background: var(--accent-blue);
+    transform: scale(1.2);
+    box-shadow: var(--glow-blue);
 }
 
 .project-media-box {

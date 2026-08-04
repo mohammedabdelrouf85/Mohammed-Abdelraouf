@@ -278,12 +278,12 @@ Operations & Soft Skills:
    Role: Cashier & Retail Operations`,
 
         'projects': `Projects Portfolio:
-  1. Gaming Zonee Portal (First Web Project) -> https://mohammedabdelrouf85.github.io/Gaming-Zonee/
-  2. Custom PHP & MySQL E-Commerce Core System
-  3. University MIS System Analysis & ERD/DFD Blueprint
-  4. Talabat CSAT & FCR Optimization Framework
-  5. OWASP SQL Injection & Prepared Statements Security Lab
-  6. PC Hardware Spec & Budget Matcher Matrix`,
+  1. MathLoop - Infinite Mental Math Arcade Game -> https://mohammedabdelrouf85.github.io/MathLoop/
+  2. AgriStats - Agricultural Statistical Analysis App
+  3. House Management & Tenant Property System
+  4. Gaming Zonee Portal -> https://mohammedabdelrouf85.github.io/Gaming-Zonee/
+  5. Custom PHP & MySQL E-Commerce Core System
+  6. OWASP SQL Injection & Prepared Statements Security Lab`,
 
         'contact': `Contact Information:
   Email    : mohammedabdelrouf85@gmail.com
@@ -473,4 +473,25 @@ Operations & Soft Skills:
     }
 
 });
+
+/* Global Gallery Image Toggle Helper */
+window.toggleMathloopImg = function(num, btn) {
+    const img1 = document.getElementById('mathloopImg1');
+    const img2 = document.getElementById('mathloopImg2');
+    if (!img1 || !img2) return;
+    
+    if (btn && btn.parentElement) {
+        const dots = btn.parentElement.querySelectorAll('.gallery-dot');
+        dots.forEach(d => d.classList.remove('active'));
+        btn.classList.add('active');
+    }
+
+    if (num === 1) {
+        img1.style.display = 'block';
+        img2.style.display = 'none';
+    } else {
+        img1.style.display = 'none';
+        img2.style.display = 'block';
+    }
+};
 
