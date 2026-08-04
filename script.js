@@ -61,11 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
        1. MOUSE CURSOR SPOTLIGHT TRACER
     ---------------------------------------------------- */
     const cursorGlow = document.getElementById('cursorGlow');
-    if (cursorGlow && window.innerWidth > 768) {
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    
+    if (cursorGlow && window.innerWidth > 768 && !isTouchDevice) {
         document.addEventListener('mousemove', (e) => {
             cursorGlow.style.left = `${e.clientX}px`;
             cursorGlow.style.top = `${e.clientY}px`;
         });
+    } else if (cursorGlow) {
+        cursorGlow.style.display = 'none';
     }
 
     /* ----------------------------------------------------
@@ -88,18 +92,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', (e) => {
             e.stopPropagation();
-            navLinks.classList.toggle('mobile-open');
+            const isOpen = navLinks.classList.toggle('mobile-open');
+            document.body.classList.toggle('no-scroll', isOpen);
             const icon = hamburger.querySelector('i');
-            if (navLinks.classList.contains('mobile-open')) {
-                icon.className = 'fa-solid fa-xmark';
-            } else {
-                icon.className = 'fa-solid fa-bars';
+            if (icon) {
+                icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
             }
         });
 
         navLinkItems.forEach(item => {
             item.addEventListener('click', () => {
                 navLinks.classList.remove('mobile-open');
+                document.body.classList.remove('no-scroll');
                 if (hamburger.querySelector('i')) {
                     hamburger.querySelector('i').className = 'fa-solid fa-bars';
                 }
@@ -110,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('click', (e) => {
             if (navLinks.classList.contains('mobile-open') && !navbar.contains(e.target)) {
                 navLinks.classList.remove('mobile-open');
+                document.body.classList.remove('no-scroll');
                 if (hamburger.querySelector('i')) {
                     hamburger.querySelector('i').className = 'fa-solid fa-bars';
                 }
