@@ -86,7 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
             navLinks.classList.toggle('mobile-open');
             const icon = hamburger.querySelector('i');
             if (navLinks.classList.contains('mobile-open')) {
@@ -103,6 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     hamburger.querySelector('i').className = 'fa-solid fa-bars';
                 }
             });
+        });
+
+        // Close mobile menu when tapping outside
+        document.addEventListener('click', (e) => {
+            if (navLinks.classList.contains('mobile-open') && !navbar.contains(e.target)) {
+                navLinks.classList.remove('mobile-open');
+                if (hamburger.querySelector('i')) {
+                    hamburger.querySelector('i').className = 'fa-solid fa-bars';
+                }
+            }
         });
     }
 
