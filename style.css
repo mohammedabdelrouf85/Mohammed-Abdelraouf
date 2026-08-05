@@ -1097,10 +1097,20 @@ body.no-scroll {
     color: #000;
     box-shadow: 0 4px 12px var(--accent-blue-glow);
 }
+.green-ribbon {
+    background: linear-gradient(135deg, #2ea043 0%, #3fb950 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(63, 185, 80, 0.35);
+}
 .star-badge {
     background: rgba(255, 215, 0, 0.15) !important;
     color: #ffd700 !important;
     border: 1px solid rgba(255, 215, 0, 0.4) !important;
+}
+.green-badge {
+    background: rgba(63, 185, 80, 0.15) !important;
+    color: #3fb950 !important;
+    border: 1px solid rgba(63, 185, 80, 0.4) !important;
 }
 
 /* Gallery Controls */

@@ -278,12 +278,13 @@ Operations & Soft Skills:
    Role: Cashier & Retail Operations`,
 
         'projects': `Projects Portfolio:
-  1. MathLoop - Infinite Mental Math Arcade Game -> https://mohammedabdelrouf85.github.io/MathLoop/
-  2. AgriStats - Agricultural Statistical Analysis App
-  3. House Management & Tenant Property System
-  4. Gaming Zonee Portal -> https://mohammedabdelrouf85.github.io/Gaming-Zonee/
-  5. Custom PHP & MySQL E-Commerce Core System
-  6. OWASP SQL Injection & Prepared Statements Security Lab`,
+  1. Prof. Dr. Abdelraouf Ramadan Academic Portfolio -> https://mohammedabdelrouf85.github.io/Abdelraouf-Ramadan-/
+  2. MathLoop - Infinite Mental Math Arcade Game -> https://mohammedabdelrouf85.github.io/MathLoop/
+  3. AgriStats - Agricultural Statistical Analysis App
+  4. House Management & Tenant Property System
+  5. Gaming Zonee Portal -> https://mohammedabdelrouf85.github.io/Gaming-Zonee/
+  6. Custom PHP & MySQL E-Commerce Core System
+  7. OWASP SQL Injection & Prepared Statements Security Lab`,
 
         'contact': `Contact Information:
   Email    : mohammedabdelrouf85@gmail.com
