@@ -278,13 +278,14 @@ Operations & Soft Skills:
    Role: Cashier & Retail Operations`,
 
         'projects': `Projects Portfolio:
-  1. Prof. Dr. Abdelraouf Ramadan Academic Portfolio -> https://mohammedabdelrouf85.github.io/Abdelraouf-Ramadan-/
-  2. MathLoop - Infinite Mental Math Arcade Game -> https://mohammedabdelrouf85.github.io/MathLoop/
-  3. AgriStats - Agricultural Statistical Analysis App
-  4. House Management & Tenant Property System
-  5. Gaming Zonee Portal -> https://mohammedabdelrouf85.github.io/Gaming-Zonee/
-  6. Custom PHP & MySQL E-Commerce Core System
-  7. OWASP SQL Injection & Prepared Statements Security Lab`,
+  1. Cadbury Dairy Milk Web Experience -> https://mohammedabdelrouf85.github.io/Dairy-Milk/
+  2. Abdelraouf Ramadan -> https://mohammedabdelrouf85.github.io/Abdelraouf-Ramadan-/
+  3. MathLoop - Infinite Mental Math Arcade Game -> https://mohammedabdelrouf85.github.io/MathLoop/
+  4. AgriStats - Agricultural Statistical Analysis App
+  5. House Management & Tenant Property System
+  6. Gaming Zonee Portal -> https://mohammedabdelrouf85.github.io/Gaming-Zonee/
+  7. Custom PHP & MySQL E-Commerce Core System
+  8. OWASP SQL Injection & Prepared Statements Security Lab`,
 
         'contact': `Contact Information:
   Email    : mohammedabdelrouf85@gmail.com
