@@ -1214,7 +1214,24 @@ body.no-scroll {
 .project-title {
     font-size: 1.25rem;
     color: var(--text-heading);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.project-date-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    background: rgba(22, 27, 34, 0.7);
+    border: 1px solid var(--border-glass);
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-bottom: 0.85rem;
+}
+.project-date-tag i {
+    color: var(--accent-blue);
 }
 
 .project-desc {
