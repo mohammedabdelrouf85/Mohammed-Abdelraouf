@@ -283,7 +283,7 @@ Operations & Soft Skills:
   3. MathLoop - Infinite Mental Math Arcade Game -> https://mohammedabdelrouf85.github.io/MathLoop/
   4. AgriStats - Agricultural Statistical Analysis App
   5. House Management & Tenant Property System
-  6. Gaming Zonee Portal -> https://mohammedabdelrouf85.github.io/Gaming-Zonee/
+  6. Gaming Zone Portal -> https://mohammedabdelrouf85.github.io/Gaming-Zone/
   7. Custom PHP & MySQL E-Commerce Core System
   8. OWASP SQL Injection & Prepared Statements Security Lab`,
 
