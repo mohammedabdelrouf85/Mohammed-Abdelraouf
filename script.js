@@ -1,4 +1,4 @@
-﻿/**
+/**
  * MOHAMMED ABDELRAOUF PORTFOLIO INTERACTIVE SCRIPT (2026)
  * Features: Cursor Spotlight, Interactive CLI Terminal, One-Click Copy, Filter Matrices, Navigation & Toast Notifications.
  */
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
   - clear      : Clear terminal screen`,
 
         'about': `Name       : Mohammed Abdelraouf
-Location   : Egypt ≡ƒç¬≡ƒç¼
+Location   : Egypt 🇪🇬
 Education  : Business Administration (MIS Student @ MTI University)
 Roles      : Live Chat Support Specialist (Teleperformance - Talabat Account)
 Focus      : Aspiring Back-End PHP Developer & Cybersecurity Learner`,
